@@ -1,4 +1,0 @@
-01-training-progress.png: Gráfico de 1RM estimado do exercício Cuffed Extension em oito treinos registrados.
-02-exercise-library.png: Biblioteca de exercícios com busca, filtro por categoria e exercícios de musculação.
-03-cardio-statistics.png: Estatísticas de cardio em quatro semanas com sessões, tempo total e minutos por semana.
-04-bodyweight-week.png: Média, tendência, registro diário e histórico semanal de peso corporal.

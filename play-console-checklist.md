@@ -1,72 +1,71 @@
-# Checklist de publicação no Google Play
+# Google Play publishing checklist
 
-## Preparado no repositório
+## Prepared in the repository
 
-- [x] Nome, slug, versão `1.0.0` e `versionCode` `3`.
-- [x] Identificador Android `com.rabpaulo.liftbook`.
-- [x] Projeto vinculado ao Expo/EAS com owner e project ID em `app.json`.
-- [x] Ícone do app, ícone adaptativo, ícone da loja e imagem de destaque
-  sincronizados com a identidade visual atual.
-- [x] Backup Android desativado para manter os dados locais fora do Google Drive.
-- [x] Microfone bloqueado e permissão de sobreposição bloqueada.
-- [x] Explicação e consentimento antes de câmera ou seleção de mídia.
-- [x] Tela de privacidade e aviso de saúde dentro do app.
-- [x] Backups CSV separados para Peso corporal, Cardio e Treino, iniciados pelo usuário.
-- [x] Perfil EAS de produção configurado para AAB com incremento automático.
-- [x] Descrições e notas da versão em inglês e português do Brasil,
-  atualizadas para gráficos de progresso, controles de série, widget, backups e
-  privacidade local.
-- [x] Ícone da loja e imagem de destaque nas dimensões exigidas.
-- [x] Rascunho das declarações de Segurança dos dados e Apps de saúde
-  reauditado em 8 de agosto de 2026.
-- [x] Descoberta e layouts responsivos 4×2, 2×2 e 2×1 do widget de peso
-  corporal validados em um aparelho Samsung Android.
-- [x] Quatro capturas reais de telefone preparadas em 1080 × 1920, sem barras
-  do sistema, dados fictícios ou textos promocionais sobrepostos.
+- [x] Name, slug, version `1.0.0`, and `versionCode` `3`.
+- [x] Android identifier `com.rabpaulo.liftbook`.
+- [x] Project linked to Expo/EAS with the owner and project ID in `app.json`.
+- [x] App icon, adaptive icon, store icon, and feature graphic synchronized
+  with the current visual identity.
+- [x] Android backup disabled to keep local data out of Google Drive.
+- [x] Microphone and overlay permissions blocked.
+- [x] Explanation and consent shown before camera or media selection.
+- [x] In-app privacy screen and health disclaimer.
+- [x] Separate user-initiated CSV backups for Bodyweight, Cardio, and Training.
+- [x] Production EAS profile configured for AAB with automatic increment.
+- [x] English descriptions and release notes updated for progress charts, set
+  controls, widget, backups, and local privacy.
+- [x] Store icon and feature graphic in the required dimensions.
+- [x] Draft Data safety and Health apps declarations re-audited on August 8,
+  2026.
+- [x] Bodyweight widget discovery and responsive 4×2, 2×2, and 2×1 layouts
+  validated on a Samsung Android device.
+- [x] Four real 1080 × 1920 phone screenshots prepared without system bars,
+  mock data, or overlaid promotional text.
 
-## Depende do titular da publicação
+## Depends on the publisher
 
-- [ ] Criar ou verificar uma conta de desenvolvedor do Google Play como
-  **organização** e concluir a verificação. O Google orienta contas que oferecem
-  apps de saúde a escolher esse tipo; a verificação exige D-U-N-S e documentos
-  da organização.
-- [ ] Confirmar no Play Console que o package name está disponível e criar o app.
-- [ ] Decidir se mantém o nome. Já existe uma listagem pública recente chamada
-  **LiftBook** (`com.liftbook.app`):
-  https://play.google.com/store/apps/details?id=com.liftbook.app. Títulos não
-  são exclusivos, mas isso cria risco de confusão, descoberta ruim e eventual
-  conflito de marca.
-- [ ] Adicionar `liftbook.support@gmail.com` como contato público da listagem.
-  A política de privacidade já usa esse endereço.
-- [ ] Hospedar a landing `store-listing/index.html` e a rota
-  `store-listing/privacy-policy/index.html` em HTTPS, numa URL pública, ativa,
-  sem login, sem geobloqueio e que não seja PDF; cadastrar a URL direta da
-  política no Console e testá-la em uma janela anônima.
-- [ ] Confirmar que o nome público do desenvolvedor no Console corresponde a
-  `rabpaulodev` ou atualizar essa identificação na política antes da publicação.
-- [ ] Identificar o provedor de hospedagem na política se ele tratar logs
-  técnicos além do necessário para entregar e proteger o site.
-- [ ] Confirmar o acesso do titular ao projeto `@rabpaulodev/liftbook` e
-  configurar ou recuperar com segurança as credenciais de produção.
-- [ ] Gerar o AAB final assinado com credenciais de produção e habilitar o
-  Play App Signing no primeiro envio.
-- [ ] Confirmar a autorização para divulgar os valores reais visíveis nas
-  capturas e enviar as quatro imagens ao Console na ordem numérica.
-- [ ] Preencher Segurança dos dados, Declaração de apps de saúde, conteúdo,
-  público-alvo, anúncios e acesso ao app conforme `data-safety.md`.
-- [ ] Escolher países, preço gratuito/pago e aceitar os termos aplicáveis.
-- [ ] Enviar a um canal de teste, executar o relatório de pré-lançamento e
-  corrigir eventuais falhas antes da produção.
-- [ ] Validar gravação, reprodução, permissões e limpeza de vídeos em um aparelho
-  Android físico.
-- [ ] Validar o cronômetro de cardio, a captura do preview em PNG e o compartilhamento
-  nativo em um aparelho Android físico.
-- [ ] Validar seleção, exportação e restauração dos três tipos de backup CSV em
-  um aparelho Android físico.
-- [ ] Validar o deep link e a atualização horária do widget, além da descoberta
-  e dos tamanhos responsivos em launchers diferentes do Samsung.
+- [ ] Create or verify a Google Play developer account as an
+  **organization** and complete verification. Google directs accounts offering
+  health apps to choose this type; verification requires a D-U-N-S number and
+  organization documents.
+- [ ] Confirm in Play Console that the package name is available and create the
+  app.
+- [ ] Decide whether to keep the name. A recent public listing already exists
+  under the name **LiftBook** (`com.liftbook.app`):
+  https://play.google.com/store/apps/details?id=com.liftbook.app. Titles are not
+  exclusive, but this creates a risk of confusion, poor discoverability, and a
+  potential trademark conflict.
+- [ ] Add `liftbook.support@gmail.com` as the listing's public contact. The
+  privacy policy already uses this address.
+- [ ] Host the landing page and `privacy-policy/index.html` over HTTPS at a
+  public, active URL without login or geoblocking and not as a PDF. Enter the
+  policy's direct URL in Play Console and test it in a private window.
+- [ ] Confirm that the public developer name in Play Console matches
+  `rabpaulodev`, or update that identification in the policy before publishing.
+- [ ] Identify the hosting provider in the policy if it processes technical
+  logs beyond what is necessary to deliver and protect the site.
+- [ ] Confirm the publisher's access to the `@rabpaulodev/liftbook` project and
+  securely configure or recover production credentials.
+- [ ] Generate the final signed AAB with production credentials and enable Play
+  App Signing on the first upload.
+- [ ] Confirm authorization to publish the real values visible in the
+  screenshots and upload the four images to Play Console in numerical order.
+- [ ] Complete Data safety, Health apps, content, target audience, ads, and app
+  access declarations according to `data-safety.md`.
+- [ ] Choose countries and free/paid pricing, and accept the applicable terms.
+- [ ] Submit to a test track, run the pre-launch report, and fix any issues
+  before production.
+- [ ] Validate video recording, playback, permissions, and cleanup on a physical
+  Android device.
+- [ ] Validate the cardio timer, PNG preview capture, and native sharing on a
+  physical Android device.
+- [ ] Validate selection, export, and restoration of all three CSV backup types
+  on a physical Android device.
+- [ ] Validate the widget deep link and hourly update, plus discovery and
+  responsive sizes on launchers other than Samsung's.
 
-Referências oficiais:
+Official references:
 
 - https://support.google.com/googleplay/android-developer/answer/17190352
 - https://support.google.com/googleplay/android-developer/answer/13634885

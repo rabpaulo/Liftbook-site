@@ -1,7 +1,0 @@
-Primeira versão pública do Liftbook.
-
-• Registre musculação com modelos, controles rápidos, RIR, recordes e gráficos de progresso
-• Registre cardio manualmente ou com cronômetro recuperável, metas e estatísticas
-• Acompanhe tendências e fases de peso, com widget semanal no Android
-• Compartilhe PNGs com filtro de privacidade e exporte ou restaure backups CSV separados
-• Mantenha o diário no dispositivo, sem conta ou anúncios

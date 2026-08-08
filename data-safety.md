@@ -1,73 +1,73 @@
-# Google Play — respostas propostas
+# Google Play — proposed answers
 
-Estas respostas refletem o código local auditado em 8 de agosto de 2026. Devem
-ser reconfirmadas se forem adicionados backend, analytics, anúncios, crash
-reporting, login, sincronização ou novos SDKs.
+These answers reflect the local code audited on August 8, 2026. They must be
+reconfirmed if a backend, analytics, ads, crash reporting, login,
+synchronization, or new SDKs are added.
 
-## Segurança dos dados
+## Data safety
 
-- O app coleta ou compartilha algum tipo de dado exigido pelo formulário? **Não**.
-- Justificativa: o app não transmite os registros para o desenvolvedor nem para
-  terceiros. Banco SQLite, preferências, snapshot privado do widget Android e
-  vídeos copiados são processados somente no dispositivo. O backup Android está
-  desativado.
-- Ao escolher **Compartilhar PNG**, o usuário envia um resumo filtrado para a
-  folha de compartilhamento do sistema e escolhe o destino. Essa exportação
-  iniciada pelo usuário não envia dados ao desenvolvedor; o arquivo temporário
-  é removido pelo app quando possível.
-- Ao escolher um backup CSV de **Peso corporal**, **Cardio** ou **Treino** em
-  Configurações, o usuário envia os registros daquela área para a folha de
-  compartilhamento do sistema e escolhe o destino. O CSV pode conter dados de
-  saúde e condicionamento, comentários e endereços locais de anexos, mas não
-  incorpora as fotos ou os vídeos. Essa exportação também é iniciada pelo
-  usuário, não envia dados ao desenvolvedor e remove o arquivo temporário quando
-  possível.
-- Compartilhamento de dados: **nenhum**.
-- Conta de usuário: **não existe**.
-- Solicitação de exclusão de conta: **não se aplica**.
-- Dados em trânsito: **não se aplica**, pois o app não transmite os dados do
-  diário.
+- Does the app collect or share any data type required by the form? **No**.
+- Rationale: the app does not transmit journal records to the developer or
+  third parties. The SQLite database, preferences, private Android widget
+  snapshot, and copied videos are processed only on the device. Android backup
+  is disabled.
+- When the user chooses **Share PNG**, they send a filtered summary to the
+  system share sheet and select the destination. This user-initiated export
+  does not send data to the developer; the app removes the temporary file when
+  possible.
+- When the user chooses a **Bodyweight**, **Cardio**, or **Training** CSV backup
+  in Settings, they send the records from that area to the system share sheet
+  and select the destination. The CSV can contain health and fitness data,
+  comments, and local attachment addresses, but it does not embed photos or
+  videos. This export is also user-initiated, does not send data to the
+  developer, and removes the temporary file when possible.
+- Data sharing: **none**.
+- User accounts: **none**.
+- Account deletion request: **not applicable**.
+- Data in transit: **not applicable**, because the app does not transmit
+  journal data.
 
-Dados locais manipulados pelo app:
+Local data handled by the app:
 
-- Saúde e condicionamento: peso corporal, metas/fases, histórico de musculação e sessões/metas de cardio.
-- Fotos: referência local opcional em registros de peso corporal.
-- Vídeos: arquivo local opcional associado a uma série.
-- Conteúdo do usuário: comentários de séries.
-- Preferências: tema, unidade de peso, unidade de distância e incremento de
-  carga do treino.
-- Widget Android: cópia privada da média e dos valores de peso corporal da
-  semana atual, com a unidade selecionada. O widget não abre o SQLite nem envia
-  esse snapshot para fora do dispositivo.
+- Health and fitness: bodyweight, goals/phases, strength training history, and
+  cardio sessions/goals.
+- Photos: optional local reference in bodyweight entries.
+- Videos: optional local file associated with a set.
+- User content: set comments.
+- Preferences: theme, weight unit, distance unit, and training weight
+  increment.
+- Android widget: private copy of the current week's average and bodyweight
+  values, with the selected unit. The widget does not open SQLite or send this
+  snapshot off the device.
 
-Processamento somente no dispositivo não é declarado como coleta quando os
-dados nunca saem do dispositivo. Essa conclusão depende de manter
-`android.allowBackup: false` e de não introduzir transmissão por SDKs futuros.
+On-device-only processing is not declared as collection when data never leaves
+the device. This conclusion depends on keeping `android.allowBackup: false` and
+not introducing transmission through future SDKs.
 
-## Declaração de apps de saúde
+## Health apps declaration
 
-Marcar que o app oferece recursos de saúde e selecionar:
+Indicate that the app offers health features and select:
 
-- **Activity and fitness / Atividade e condicionamento físico** — registro de
-  musculação, séries, cargas, repetições, RIR e atividades de cardio.
-- **Nutrition and weight management / Nutrição e controle de peso** — registro
-  de peso corporal e metas de perda, manutenção ou ganho.
+- **Activity and fitness** — logging strength training, sets, weights,
+  repetitions, RIR, and cardio activities.
+- **Nutrition and weight management** — logging bodyweight and loss,
+  maintenance, or gain goals.
 
-O app não é dispositivo médico. A descrição da loja e a tela
-`Settings > Privacy & health` contêm o aviso exigido e recomendam consultar um
-profissional de saúde.
+The app is not a medical device. The store description and the
+`Settings > Privacy & health` screen contain the required disclaimer and
+recommend consulting a healthcare professional.
 
-## Outras declarações
+## Other declarations
 
-- Anúncios: **não contém anúncios**.
-- Acesso ao app: **todas as funções estão disponíveis sem login**.
-- Público-alvo: confirmar no Console. A recomendação conservadora para o
-  lançamento é selecionar apenas **18 anos ou mais**.
-- Conteúdo de notícias, governo, finanças, apostas ou encontros: **não**.
-- Permissões sensíveis utilizadas: câmera e seleção de mídia, iniciadas somente
-  por uma ação do usuário e precedidas por uma explicação no app.
+- Ads: **contains no ads**.
+- App access: **all features are available without login**.
+- Target audience: confirm in Play Console. The conservative recommendation for
+  launch is to select only **18 and over**.
+- News, government, finance, gambling, or dating content: **no**.
+- Sensitive permissions used: camera and media selection, initiated only by a
+  user action and preceded by an explanation in the app.
 
-Referências oficiais:
+Official references:
 
 - https://support.google.com/googleplay/android-developer/answer/10787469
 - https://support.google.com/googleplay/android-developer/answer/14738291
