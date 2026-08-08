@@ -1,0 +1,4 @@
+01-training-progress.png: Estimated 1RM chart for Cuffed Extension across eight logged workouts.
+02-exercise-library.png: Exercise library with search, category filter, and strength exercises.
+03-cardio-statistics.png: Four-week cardio statistics with session count, total time, and minutes per week.
+04-bodyweight-week.png: Bodyweight weekly average, trend, daily log actions, and weekly history.

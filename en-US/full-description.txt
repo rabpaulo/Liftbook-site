@@ -1,0 +1,31 @@
+Liftbook is a focused offline journal for strength training, cardio, and bodyweight progress. Your data stays on your device, with no account, ads, analytics, or Liftbook server.
+
+Plan and log strength training:
+• Build your own exercise library, custom categories, and reusable workout templates
+• Search, reorder, duplicate, and delete templates
+• Log weight, repetitions, RIR, set comments, and optional local videos with quick step controls
+• Review completed workouts, independent weight and repetition records, and progress charts for estimated 1RM, weight, and repetitions
+• Keep today's workout editable throughout the day
+
+Record your cardio:
+• Add manual activities or use a recoverable foreground timer
+• Track only the metrics supported by each activity type
+• Reuse templates and review goals, history, and period statistics
+• Share privacy-filtered PNG summaries of completed activities
+
+Understand your bodyweight:
+• Record daily bodyweight in kilograms or pounds
+• Organize entries into weekly averages
+• Create lose, maintain, or gain phases with a weekly target
+• Attach optional progress photos from your device
+• See the current week's average and daily entries in the Android home-screen widget
+
+Back up on your terms:
+• Export Bodyweight, Cardio, or Training to separate CSV files
+• Restore one area without replacing the other journal data or app preferences
+
+Private by design:
+• Your journal stays on your device unless you explicitly export or share it
+• Android cloud backup is disabled
+
+Liftbook is not a medical device and does not diagnose, treat, cure, or prevent any medical condition. Trends and estimates are for personal logging only. Consult a qualified healthcare professional for medical advice and before making health or exercise decisions that may affect you.

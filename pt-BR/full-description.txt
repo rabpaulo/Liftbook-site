@@ -1,0 +1,31 @@
+Liftbook é um diário offline e objetivo para musculação, cardio e evolução do peso corporal. Seus dados ficam no dispositivo, sem conta, anúncios, análise de uso ou servidor do Liftbook.
+
+Planeje e registre seus treinos:
+• Crie sua biblioteca de exercícios, categorias personalizadas e modelos reutilizáveis
+• Pesquise, reordene, duplique e exclua modelos de treino
+• Registre carga, repetições, RIR, comentários e vídeos locais opcionais com controles rápidos
+• Consulte treinos concluídos, recordes independentes de carga e repetições e gráficos de 1RM estimado, carga e repetições
+• Continue editando o treino de hoje durante todo o dia
+
+Registre seu cardio:
+• Adicione atividades manuais ou use um cronômetro recuperável em primeiro plano
+• Registre somente as métricas compatíveis com cada tipo de atividade
+• Reutilize modelos e acompanhe metas, histórico e estatísticas por período
+• Compartilhe resumos em PNG de atividades concluídas com filtro de privacidade
+
+Acompanhe seu peso corporal:
+• Registre o peso diário em quilogramas ou libras
+• Organize os registros em médias semanais
+• Crie fases para perder, manter ou ganhar peso com uma meta semanal
+• Anexe fotos opcionais do seu dispositivo
+• Veja a média e os registros da semana atual no widget da tela inicial do Android
+
+Faça backup do seu jeito:
+• Exporte Peso corporal, Cardio ou Treino em arquivos CSV separados
+• Restaure uma área sem substituir os outros registros ou as preferências do app
+
+Privacidade desde o início:
+• Seu diário fica no dispositivo, salvo quando você decide exportar ou compartilhar
+• O backup em nuvem do Android está desativado
+
+Liftbook não é um dispositivo médico e não diagnostica, trata, cura ou previne qualquer condição médica. Tendências e estimativas servem apenas para registro pessoal. Consulte um profissional de saúde qualificado para orientação médica e antes de tomar decisões de saúde ou exercício que possam afetar você.

@@ -1,0 +1,33 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1024" height="500" viewBox="0 0 1024 500">
+  <defs>
+    <clipPath id="icon-mask">
+      <rect x="688" y="98" width="304" height="304" rx="72"/>
+    </clipPath>
+  </defs>
+
+  <rect width="1024" height="500" fill="#DAD8D0"/>
+  <circle cx="868" cy="52" r="218" fill="#C7C3B8"/>
+  <circle cx="1000" cy="448" r="254" fill="#E8E5DE"/>
+  <path d="M0 420C166 382 288 390 438 430C530 454 604 462 688 454V500H0Z" fill="#CFCCC3" opacity=".72"/>
+
+  <text
+    x="76"
+    y="282"
+    fill="#111110"
+    font-family="Adwaita Sans"
+    font-size="92"
+    font-weight="600"
+    letter-spacing="-3"
+  >Liftbook</text>
+
+  <rect x="680" y="90" width="320" height="320" rx="80" fill="#B5B1A7" opacity=".6"/>
+  <image
+    href="store-icon.png"
+    x="688"
+    y="98"
+    width="304"
+    height="304"
+    clip-path="url(#icon-mask)"
+    preserveAspectRatio="xMidYMid meet"
+  />
+</svg>
