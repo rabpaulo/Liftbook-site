@@ -4,7 +4,7 @@ import react from "@vitejs/plugin-react";
 import { defineConfig } from "vite";
 
 export default defineConfig(({ command }) => ({
-  base: "/Liftbook-app/",
+  base: "/Liftbook-site/",
   plugins: [
     react(),
     command === "serve" && {
