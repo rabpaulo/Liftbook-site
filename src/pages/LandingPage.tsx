@@ -1,7 +1,7 @@
-import bodyweightWeekScreenshot from "../../screenshots/04-bodyweight-week.png";
-import cardioStatisticsScreenshot from "../../screenshots/03-cardio-statistics.png";
-import exerciseLibraryScreenshot from "../../screenshots/02-exercise-library.png";
-import trainingProgressScreenshot from "../../screenshots/01-training-progress.png";
+import bodyweightHomeScreenshot from "../../artifacts/showcase/21-bodyweight-home.png";
+import cardioStatisticsScreenshot from "../../artifacts/showcase/20-cardio-statistics.png";
+import exerciseLibraryScreenshot from "../../artifacts/showcase/04-training-exercises.png";
+import trainingHistoryScreenshot from "../../artifacts/showcase/05-training-exercise-history.png";
 import storeIcon from "../../store-icon.png";
 import { ArrowIcon, SiteFooter, SiteHeader } from "../components/SiteChrome";
 
@@ -52,10 +52,10 @@ export function LandingPage() {
               </div>
               <figure className="phone-frame hero-phone">
                 <img
-                  src={trainingProgressScreenshot}
-                  alt="Estimated 1RM chart for the Cuffed Extension exercise across eight logged workouts."
-                  width="1080"
-                  height="1920"
+                  src={trainingHistoryScreenshot}
+                  alt="Bench Press workout history with sets, weight, repetitions, RIR, and comments."
+                  width="513"
+                  height="928"
                 />
               </figure>
               <div className="metric-card metric-bottom" aria-hidden="true">
@@ -186,8 +186,8 @@ export function LandingPage() {
                   <img
                     src={exerciseLibraryScreenshot}
                     alt="Exercise library with search, category filters, and strength exercises."
-                    width="1080"
-                    height="1920"
+                    width="513"
+                    height="928"
                     loading="lazy"
                   />
                 </div>
@@ -205,8 +205,8 @@ export function LandingPage() {
                   <img
                     src={cardioStatisticsScreenshot}
                     alt="Four-week cardio statistics with sessions, total time, and minutes per week."
-                    width="1080"
-                    height="1920"
+                    width="513"
+                    height="928"
                     loading="lazy"
                   />
                 </div>
@@ -222,10 +222,10 @@ export function LandingPage() {
                 </div>
                 <div className="phone-frame">
                   <img
-                    src={bodyweightWeekScreenshot}
-                    alt="Bodyweight average, trend, daily log, and weekly history."
-                    width="1080"
-                    height="1920"
+                    src={bodyweightHomeScreenshot}
+                    alt="Bodyweight weekly average, current trend, daily entry, and weekly history."
+                    width="513"
+                    height="928"
                     loading="lazy"
                   />
                 </div>
