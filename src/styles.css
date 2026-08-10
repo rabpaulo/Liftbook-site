@@ -223,16 +223,6 @@ a:focus-visible {
   text-transform: uppercase;
 }
 
-.status-dot {
-  display: inline-block;
-  width: 8px;
-  height: 8px;
-  margin-right: 8px;
-  border-radius: 50%;
-  background: var(--success);
-  box-shadow: 0 0 0 4px var(--success-soft);
-}
-
 .hero h1,
 .section-heading h2,
 .control-copy h2,

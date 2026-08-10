@@ -18,9 +18,6 @@ export function LandingPage() {
         <section className="hero" id="home">
           <div className="shell hero-grid">
             <div className="hero-copy">
-              <p className="eyebrow">
-                <span className="status-dot" aria-hidden="true" /> Your progress journal
-              </p>
               <h1>
                 Your training.
                 <br />
