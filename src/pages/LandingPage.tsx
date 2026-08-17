@@ -20,6 +20,16 @@ export function LandingPage() {
     setOpenFaq(openFaq === index ? null : index);
   };
 
+  const galleryItems = [
+    { src: trainingHome,      alt: "Training Home",           caption: "Training Home" },
+    { src: trainingToday,     alt: "Active Workout Editor",   caption: "Active Workout" },
+    { src: trainingHistory,   alt: "Exercise History",        caption: "Exercise 1RM History" },
+    { src: cardioHome,        alt: "Cardio Home",             caption: "Cardio Dashboard" },
+    { src: cardioStats,       alt: "Cardio Statistics",       caption: "Cardio Stats" },
+    { src: bodyweightHome,    alt: "Bodyweight Home",         caption: "Bodyweight Trends" },
+    { src: bodyweightPhases,  alt: "Bodyweight Phases",       caption: "Phase Management" },
+  ];
+
   return (
     <>
       <a className="skip-link" href="#content">
@@ -462,55 +472,17 @@ export function LandingPage() {
             </div>
           </div>
 
-          <div className="gallery-container">
-            <figure className="gallery-item">
-              <div className="phone-frame gallery-phone">
-                <img src={trainingHome} alt="Training Home" width="513" height="928" loading="lazy" />
-              </div>
-              <figcaption>Training Home</figcaption>
-            </figure>
-
-            <figure className="gallery-item">
-              <div className="phone-frame gallery-phone">
-                <img src={trainingToday} alt="Active Workout Editor" width="513" height="928" loading="lazy" />
-              </div>
-              <figcaption>Active Workout</figcaption>
-            </figure>
-
-            <figure className="gallery-item">
-              <div className="phone-frame gallery-phone">
-                <img src={trainingHistory} alt="Exercise History" width="513" height="928" loading="lazy" />
-              </div>
-              <figcaption>Exercise 1RM History</figcaption>
-            </figure>
-
-            <figure className="gallery-item">
-              <div className="phone-frame gallery-phone">
-                <img src={cardioHome} alt="Cardio Home" width="513" height="928" loading="lazy" />
-              </div>
-              <figcaption>Cardio Dashboard</figcaption>
-            </figure>
-
-            <figure className="gallery-item">
-              <div className="phone-frame gallery-phone">
-                <img src={cardioStats} alt="Cardio Statistics" width="513" height="928" loading="lazy" />
-              </div>
-              <figcaption>Cardio Stats</figcaption>
-            </figure>
-
-            <figure className="gallery-item">
-              <div className="phone-frame gallery-phone">
-                <img src={bodyweightHome} alt="Bodyweight Home" width="513" height="928" loading="lazy" />
-              </div>
-              <figcaption>Bodyweight Trends</figcaption>
-            </figure>
-
-            <figure className="gallery-item">
-              <div className="phone-frame gallery-phone">
-                <img src={bodyweightPhases} alt="Bodyweight Phases" width="513" height="928" loading="lazy" />
-              </div>
-              <figcaption>Phase Management</figcaption>
-            </figure>
+          <div className="gallery-marquee">
+            <div className="gallery-track">
+              {[...galleryItems, ...galleryItems].map((item, i) => (
+                <figure className="gallery-item" key={i}>
+                  <div className="phone-frame gallery-phone">
+                    <img src={item.src} alt={item.alt} width="513" height="928" loading="lazy" />
+                  </div>
+                  <figcaption>{item.caption}</figcaption>
+                </figure>
+              ))}
+            </div>
           </div>
         </section>
 
