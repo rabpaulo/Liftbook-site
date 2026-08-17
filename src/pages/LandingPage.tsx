@@ -72,10 +72,6 @@ export function LandingPage() {
                   </div>
                 </a>
 
-                <a className="hero-secondary-btn" href="#features">
-                  Explore Features
-                  <ArrowIcon />
-                </a>
               </div>
 
               <div className="hero-stats">
