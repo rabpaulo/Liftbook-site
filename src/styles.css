@@ -1217,35 +1217,6 @@ a:focus-visible {
   background: var(--background);
 }
 
-.policy-language-divider {
-  display: flex;
-  align-items: center;
-  gap: 15px;
-  margin: 52px 0;
-  color: var(--ink-muted);
-  font-size: 12px;
-  font-weight: 700;
-  letter-spacing: 0.12em;
-  text-transform: uppercase;
-}
-
-.policy-language-divider::before,
-.policy-language-divider::after {
-  height: 1px;
-  flex: 1;
-  background: var(--line);
-  content: "";
-}
-
-.policy-english {
-  padding-top: 12px;
-}
-
-.policy-english > h2 {
-  margin-bottom: 32px;
-  font-size: 38px;
-}
-
 .policy-meta-grid {
   display: grid;
   grid-template-columns: 1fr 1fr;
