@@ -38,12 +38,6 @@ export function LandingPage() {
 
           <div className="shell hero-grid">
             <div className="hero-text-col">
-              <div className="hero-chip-wrap">
-                <span className="hero-chip">
-                  100% Offline · Private Workout Journal
-                </span>
-              </div>
-
               <h1 className="hero-headline">
                 The workout & health journal built for{" "}
                 <span className="highlight-text">serious lifters</span>
