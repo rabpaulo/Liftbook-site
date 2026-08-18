@@ -550,7 +550,7 @@ export function LandingPage() {
                     <p>
                       Yes. Liftbook was built out of frustration with modern workout apps stuffed
                       with intrusive paywalls, subscription fees, and advertisements. Liftbook is
-                      completely free for athletes to log strength training, cardio, and bodyweight.
+                      completely free to log strength training, cardio, and bodyweight.
                     </p>
                   </div>
                 )}
