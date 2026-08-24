@@ -1,7 +1,2 @@
-First public release of Liftbook.
-
-• Log strength workouts with templates, quick set controls, RIR, personal records, and progress charts
-• Track cardio manually or with a recoverable timer, plus goals and statistics
-• Follow bodyweight trends and phases, with an Android weekly widget
-• Share privacy-filtered PNGs and export or restore separate CSV backups
-• Keep your journal on your device, without an account or ads
+This update improves reliability, accessibility, account controls, and release safety.
+Your local journal and free manual .liftbook and CSV transfers remain unchanged.

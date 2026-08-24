@@ -1501,7 +1501,8 @@ a {
   margin: 0 0 16px;
 }
 
-.policy-content ul {
+.policy-content ul,
+.policy-content ol {
   display: grid;
   gap: 8px;
   margin: 16px 0;
@@ -1736,6 +1737,10 @@ a {
   .policy-meta-grid,
   .policy-toc ol {
     grid-template-columns: 1fr;
+  }
+
+  .policy-toc {
+    display: none;
   }
 }
 

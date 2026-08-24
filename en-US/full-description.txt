@@ -1,4 +1,4 @@
-Liftbook is a focused offline journal for strength training, cardio, and bodyweight progress. Your data stays on your device, with no account, ads, analytics, or Liftbook server.
+Liftbook is a focused local-first journal for strength training, cardio, and bodyweight progress. The core journal works offline without an account. Liftbook has no ads or behavioral analytics.
 
 Plan and log strength training:
 • Build your own exercise library, custom categories, and reusable workout templates
@@ -26,6 +26,6 @@ Back up on your terms:
 
 Private by design:
 • Your journal stays on your device unless you explicitly export or share it
-• Android cloud backup is disabled
+• Android system backup is disabled; manual Liftbook and CSV transfer stays under your control
 
 Liftbook is not a medical device and does not diagnose, treat, cure, or prevent any medical condition. Trends and estimates are for personal logging only. Consult a qualified healthcare professional for medical advice and before making health or exercise decisions that may affect you.
