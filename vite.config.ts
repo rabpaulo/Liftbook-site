@@ -24,6 +24,10 @@ export default defineConfig(({ command }) => ({
         privacyPolicy: fileURLToPath(
           new URL("./privacy-policy/index.html", import.meta.url),
         ),
+        terms: fileURLToPath(new URL("./terms/index.html", import.meta.url)),
+        accountDeletion: fileURLToPath(
+          new URL("./account-deletion/index.html", import.meta.url),
+        ),
       },
     },
   },

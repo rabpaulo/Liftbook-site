@@ -1,375 +1,232 @@
 import { SiteFooter, SiteHeader } from "../components/SiteChrome";
 
-const policySections = [
+const sections = [
   ["scope", "Scope and contact"],
-  ["data", "Data handled on your device"],
-  ["use", "How Liftbook uses data"],
-  ["collection", "Collection and sharing"],
-  ["permissions", "Permissions and media"],
-  ["transfers", "Exports, imports, and widget"],
+  ["data", "Data we handle"],
+  ["purposes", "How data is used"],
+  ["processors", "Processors and sharing"],
+  ["cloud", "Cloud backup and security"],
   ["retention", "Retention and deletion"],
-  ["security", "Security"],
-  ["website", "Website and external services"],
-  ["health", "Health disclaimer"],
-  ["changes", "Policy changes"],
+  ["local", "Local data and permissions"],
+  ["health", "Health information"],
+  ["rights", "Choices and rights"],
+  ["changes", "Changes"],
 ] as const;
 
 export function PrivacyPolicyPage() {
   return (
     <>
-      <a className="skip-link" href="#privacy-policy">
-        Skip to the privacy policy
-      </a>
-
+      <a className="skip-link" href="#legal-content">Skip to the privacy policy</a>
       <SiteHeader page="privacy" />
-
-      <main id="privacy-policy">
+      <main id="legal-content">
         <section className="policy-hero">
           <div className="shell policy-hero-grid">
             <div>
               <p className="eyebrow">Public privacy notice</p>
               <h1>Privacy Policy</h1>
               <p className="policy-hero-summary">
-                How Liftbook accesses, uses, protects, shares, retains, and deletes the information
-                you record in the Android app.
+                How Liftbook handles account, subscription, fitness and wellness, media, cloud
+                backup, local journal, and operational data.
               </p>
             </div>
-            <p className="policy-date">
-              <strong>Effective date</strong>
-              <br />
-              August 8, 2026
-            </p>
+            <p className="policy-date"><strong>Effective date</strong><br />August 24, 2026</p>
           </div>
         </section>
 
         <div className="shell policy-layout">
           <aside className="policy-toc" aria-label="Privacy policy contents">
             <p>In this policy</p>
-            <ol>
-              {policySections.map(([id, label]) => (
-                <li key={id}>
-                  <a href={`#${id}`}>{label}</a>
-                </li>
-              ))}
-            </ol>
+            <ol>{sections.map(([id, label]) => <li key={id}><a href={`#${id}`}>{label}</a></li>)}</ol>
           </aside>
 
           <article className="policy-content">
             <p className="policy-lead">
-              <strong>Summary:</strong> Liftbook is an offline strength training, cardio, and
-              bodyweight journal. It has no user accounts, advertising, analytics, or
-              Liftbook-operated backend. Your journal is processed locally on your device.
-              Liftbook does not sell your data or automatically transmit it to the developer or
-              third parties.
+              <strong>Summary:</strong> Liftbook is local-first. Core journaling works without an
+              account, advertising, or behavioral analytics. If you choose Google sign-in,
+              Premium, or cloud backup, the minimum account, purchase, and backup data needed for
+              those services is transmitted to Google/Firebase and RevenueCat. Liftbook does not
+              sell personal data.
             </p>
 
             <section id="scope">
-              <h2>1. Scope, developer, and contact</h2>
+              <h2>1. Scope, controller, and contact</h2>
               <p>
-                This policy applies to the <strong>Liftbook</strong> Android application and the
-                Liftbook website that hosts this policy. The app is identified by the Android
-                package name <strong>com.rabpaulo.liftbook</strong> and is developed and published
-                by <strong>rabpaulodev</strong>.
+                This policy applies to the Liftbook Android app, package
+                <strong> com.rabpaulo.liftbook</strong>, and this website. Liftbook is developed and
+                published by <strong>rabpaulodev</strong>, which determines how Liftbook data is
+                handled. Contact <a href="mailto:liftbook.support@gmail.com">liftbook.support@gmail.com</a>
+                for privacy questions, rights requests, or security reports.
               </p>
-              <p>
-                For privacy questions, requests, or reports, contact{" "}
-                <a href="mailto:liftbook.support@gmail.com">liftbook.support@gmail.com</a>.
-              </p>
-              <div className="policy-meta-grid" aria-label="Application and developer details">
-                <div>
-                  <span>Application</span>
-                  <strong>Liftbook</strong>
-                </div>
-                <div>
-                  <span>Developer</span>
-                  <strong>rabpaulodev</strong>
-                </div>
-                <div>
-                  <span>Android package</span>
-                  <strong>com.rabpaulo.liftbook</strong>
-                </div>
-                <div>
-                  <span>Privacy contact</span>
-                  <strong>liftbook.support@gmail.com</strong>
-                </div>
+              <div className="policy-meta-grid" aria-label="Application and privacy contact">
+                <div><span>Application</span><strong>Liftbook</strong></div>
+                <div><span>Developer</span><strong>rabpaulodev</strong></div>
+                <div><span>Android package</span><strong>com.rabpaulo.liftbook</strong></div>
+                <div><span>Privacy contact</span><strong>liftbook.support@gmail.com</strong></div>
               </div>
               <p>
-                This policy does not govern Google Play, your device operating system, or any app,
-                cloud drive, messaging service, email provider, or other destination you choose
-                when exporting or sharing data. Those services handle information under their own
-                terms and privacy policies.
+                Google Play, Android, and destinations you choose for manual sharing or export also
+                process data under their own privacy terms.
               </p>
             </section>
 
             <section id="data">
-              <h2>2. Personal and sensitive data handled on your device</h2>
-              <p>
-                Liftbook handles only the information needed for the features you choose to use.
-                This can include health and fitness information that Google Play treats as personal
-                and sensitive user data.
-              </p>
-              <h3>Bodyweight</h3>
+              <h2>2. Data Liftbook handles</h2>
+              <h3>Local journal and wellness data</h3>
               <ul>
-                <li>daily dates and bodyweight values;</li>
-                <li>phase names, goals, weekly targets, durations, and history; and</li>
-                <li>optional local references to photos you select from your media library.</li>
+                <li>bodyweight logs, phases, goals, trends, dates, and optional photos;</li>
+                <li>strength exercises, templates, schedules, workouts, weights, repetitions, RIR, notes, comments, records, ratings, scores, distribution, progression, and optional set videos;</li>
+                <li>cardio activity types, sessions, schedules, goals, time, distance, speed, effort, heart-rate values, zones, incline, resistance, steps, floors, and observations when entered;</li>
+                <li>Recovery answers and calculated informational results; and</li>
+                <li>preferences, local identifiers, timestamps, and active-session state.</li>
               </ul>
-              <h3>Strength training</h3>
+              <h3>Optional account and subscription data</h3>
               <ul>
-                <li>exercise names, categories, setup notes, and reusable workout templates;</li>
-                <li>workout names, dates, exercise snapshots, and workout history;</li>
-                <li>set weights, repetitions, repetitions in reserve (RIR), and comments; and</li>
-                <li>optional local video files you select or record for workout sets.</li>
+                <li>Firebase and Google account identifiers, email address, display name, and profile photo address provided by Google sign-in;</li>
+                <li>RevenueCat App User ID, product, purchase history, entitlement, renewal, cancellation, grace, refund, and expiry state;</li>
+                <li>device-ownership state for cloud uploads and server timestamps; and</li>
+                <li>Google Play handles payment credentials. Liftbook does not receive your full card number.</li>
               </ul>
-              <h3>Cardio</h3>
+              <h3>Optional cloud and operational data</h3>
               <ul>
-                <li>activity types, templates, goals, session names, dates, durations, and pauses;</li>
-                <li>
-                  optional distance, speed, heart-rate, intensity, perceived-effort,
-                  heart-rate-zone, incline, resistance, step, floor, and note values you enter; and
-                </li>
-                <li>the locally persisted state required to recover an active cardio timer.</li>
-              </ul>
-              <h3>Preferences and technical data</h3>
-              <ul>
-                <li>theme, weight-unit, distance-unit, and training weight-increment preferences;</li>
-                <li>local record identifiers, ordering, and creation or update timestamps; and</li>
-                <li>the current-week snapshot used by the Android bodyweight widget.</li>
+                <li>user-requested <strong>.liftbook</strong> archives, which can include the journal data, photos, and videos listed above;</li>
+                <li>archive size, checksum, schema version, creation time, backup state, and quota totals; and</li>
+                <li>privacy-safe operation outcome, duration, byte count, failure category, webhook lag, retry count, and random per-operation correlation ID.</li>
               </ul>
               <p>
-                Liftbook does not ask for your name, email address, phone number, precise location,
-                contacts, payment details, advertising ID, or login credentials. It does not
-                connect to Health Connect, wearable devices, external health sensors, or location
-                services.
+                Operational monitoring is designed not to contain workout or wellness values,
+                ratings or scores, notes, custom names or category contents, filenames, object
+                paths, photos, videos, archive contents, email, name, raw account ID, tokens,
+                receipts, webhook bodies, or unsanitized exceptions.
               </p>
             </section>
 
-            <section id="use">
-              <h2>3. How Liftbook accesses and uses data</h2>
-              <p>Liftbook accesses and processes the information above locally to:</p>
+            <section id="purposes">
+              <h2>3. Purposes and legal reasons</h2>
+              <p>Liftbook uses data to:</p>
               <ul>
-                <li>save, edit, search, organize, and display your journal;</li>
-                <li>restore active cardio timers and maintain workout or activity history;</li>
-                <li>
-                  calculate weekly averages, trends, goals, records, estimated one-repetition
-                  maximums, pace, speed, and other statistics on the device;
-                </li>
-                <li>attach the photo or video you choose to the relevant local record;</li>
-                <li>prepare a CSV backup or privacy-filtered PNG when you request one; and</li>
-                <li>
-                  provide the current week's bodyweight summary to the Android home-screen widget.
-                </li>
+                <li>provide local logging, calculations, charts, search, timers, widget summaries, imports, exports, and sharing you request;</li>
+                <li>authenticate an optional account and prevent account or backup abuse;</li>
+                <li>offer, validate, restore, and support Premium purchases and entitlements;</li>
+                <li>create, list, download, restore, retain, and delete opt-in cloud backups;</li>
+                <li>diagnose aggregate service failures, capacity, webhook delay, cleanup, and deletion without inspecting private content; and</li>
+                <li>meet security, fraud-prevention, accounting, consumer, and legal obligations.</li>
               </ul>
               <p>
-                Liftbook does not use journal data for advertising, marketing, analytics,
-                profiling, credit decisions, or automated decisions that produce legal or
-                similarly significant effects.
+                Depending on your location, these activities rely on performing the service you
+                request, your consent for optional permissions and cloud transfer, legitimate
+                interests in security and reliability, and legal obligations. You may withdraw
+                optional use by signing out, disabling cloud backup, cancelling Premium, or
+                deleting your account, subject to data already needed for legal obligations.
               </p>
             </section>
 
-            <section id="collection">
-              <h2>4. Data collection, transmission, sale, and sharing</h2>
-              <p>
-                Liftbook does not automatically transmit journal data off your device. The
-                developer does not collect or receive your bodyweight, workout, cardio, photo,
-                video, preference, or attachment data. The app includes no advertising, analytics,
-                crash-reporting, social-login, or cloud-sync SDK.
-              </p>
-              <p>
-                Liftbook does not sell personal or sensitive user data. It does not share journal
-                data with advertisers, analytics providers, data brokers, or other third parties.
-              </p>
-              <p>
-                Data can leave your device only when you deliberately use a system action such as
-                sharing a PNG, exporting a CSV backup, or sending an email. You choose the
-                destination. The selected destination receives and processes the data under its own
-                privacy policy; the Liftbook developer does not receive a copy unless you
-                intentionally choose to send it to the developer's support address.
-              </p>
-              <p>
-                Google Play and the Android operating system may separately process store,
-                installation, security, and device information under Google's policies. That
-                separate platform processing does not give Liftbook access to the contents of your
-                journal.
-              </p>
-            </section>
-
-            <section id="permissions">
-              <h2>5. Device permissions, photos, videos, camera, and documents</h2>
-              <p>
-                Liftbook requests optional access only after you choose a related action and see an
-                in-app explanation. You can decline a permission and continue using features that
-                do not require it. Android settings let you review or revoke granted permissions.
-              </p>
+            <section id="processors">
+              <h2>4. Service providers, disclosure, and sale</h2>
+              <p>Liftbook uses these processors only for the stated functions:</p>
               <ul>
-                <li>
-                  <strong>Photos and media:</strong> used only when you choose a bodyweight photo or
-                  a workout-set video. A bodyweight photo remains in your media library; Liftbook
-                  stores only its local address. A selected set video is copied into Liftbook's
-                  private app storage so it remains linked to that set.
-                </li>
-                <li>
-                  <strong>Camera:</strong> used only after you choose <em>Record video</em> for a
-                  workout set. Liftbook opens the system camera and copies the resulting video into
-                  its private storage.
-                </li>
-                <li>
-                  <strong>Microphone:</strong> Liftbook does not request microphone access; the
-                  Android microphone permission is blocked in the app configuration.
-                </li>
-                <li>
-                  <strong>Documents:</strong> the system document picker is used only when you
-                  choose a CSV backup to import. Liftbook reads the selected file to validate and
-                  restore the matching data area.
-                </li>
+                <li><strong>Google Play:</strong> app distribution, subscription checkout, billing, purchase status, refunds, and store security.</li>
+                <li><strong>Google Sign-In and Firebase:</strong> authentication, callable backend functions, Firestore account and backup metadata, Cloud Storage archives, integrity and abuse protection where enabled, and restricted operational logs.</li>
+                <li><strong>RevenueCat:</strong> purchase validation, entitlement state, lifecycle webhooks, restoration, support diagnostics, and customer-identity deletion.</li>
+                <li><strong>GitHub Pages:</strong> delivery and security of this public website, which may involve ordinary web-server technical logs.</li>
               </ul>
-              <p>Liftbook does not upload photos, videos, recordings, or imported documents.</p>
+              <p>
+                These providers may process data in other countries under their contractual and
+                legal safeguards. Liftbook does not send journal content to RevenueCat and does not
+                sell or rent personal or sensitive data. It does not share data with advertisers or
+                data brokers. A service provider processes data only to provide its contracted
+                service; legal disclosures may occur when validly required.
+              </p>
             </section>
 
-            <section id="transfers">
-              <h2>6. User-directed exports, imports, and the Android widget</h2>
-              <h3>PNG sharing</h3>
+            <section id="cloud">
+              <h2>5. Cloud backup, transfers, and security</h2>
               <p>
-                When you choose to share a completed workout or cardio summary, Liftbook creates a
-                temporary PNG and opens the Android share sheet. Workout notes, exercise setup
-                notes, set comments, set video addresses, and cardio observations are excluded from
-                the image. You choose the receiving app or service. Liftbook attempts to delete the
-                temporary capture after sharing.
-              </p>
-              <h3>CSV backup and restore</h3>
-              <p>
-                Bodyweight, Cardio, and Training have separate CSV backup actions. An exported CSV
-                can contain the selected area's journal records, health and fitness values,
-                comments, and local photo or video addresses. It does not embed or copy the photo
-                or video files. Liftbook opens the system share sheet, and you choose the
-                destination. The temporary export is deleted when possible.
+                Cloud backup is optional, Premium-gated, and started by you in the foreground.
+                Archives are transferred over HTTPS/TLS and encrypted at rest using Google/Firebase
+                provider-managed encryption. This is <strong>not end-to-end or zero-knowledge
+                encryption</strong>: authorized service infrastructure can decrypt data to provide
+                storage and deletion operations.
               </p>
               <p>
-                When importing, Liftbook reads only the file you select through the system document
-                picker. It accepts a backup only when its embedded area matches the action you
-                chose. Import is a replacement of that area, not a merge. Other areas and app
-                preferences are preserved. The selected temporary file is removed from Liftbook's
-                cache when possible.
-              </p>
-              <h3>Android bodyweight widget</h3>
-              <p>
-                Liftbook copies the current week's bodyweight average, seven daily values, selected
-                weight unit, and week identifier into private app storage for the widget. The widget
-                reads only that snapshot, does not open the SQLite database, and does not transmit
-                the snapshot off the device.
+                Access is protected by Firebase Authentication, UID-scoped rules, server-validated
+                entitlement and device ownership, checksums, quotas, and restrictive bucket access.
+                No system is perfectly secure, so retain an independent manual backup. Manual
+                <strong> .liftbook</strong> and CSV files and PNG shares go only to the destination
+                you choose through Android and remain governed by that destination's policy.
               </p>
             </section>
 
             <section id="retention">
-              <h2>7. Retention, deletion, and your controls</h2>
-              <p>
-                Journal data remains locally on your device until you delete the related record or
-                uninstall Liftbook. Liftbook has no user accounts and stores no journal data on a
-                developer-operated server, so there is no server-side account or journal copy for
-                the developer to retrieve or delete.
-              </p>
+              <h2>6. Retention, Premium expiry, and deletion</h2>
               <ul>
-                <li>
-                  You can edit or delete bodyweight entries, phases, cardio activities, templates,
-                  goals, exercises, sets, workouts, and other records through the app's controls.
-                </li>
-                <li>
-                  Deleting a set, exercise, or workout also deletes its app-owned workout video when
-                  possible and when that file is not referenced elsewhere.
-                </li>
-                <li>
-                  Removing a bodyweight photo reference does not delete the original photo from
-                  your media library. Delete the original through your device's photo app if
-                  desired.
-                </li>
-                <li>
-                  Uninstalling Liftbook removes its private SQLite database, preferences, widget
-                  snapshot, and app-owned files according to Android's standard behavior. Android
-                  cloud backup is disabled for Liftbook.
-                </li>
-                <li>
-                  Copies of CSV or PNG files sent to another app, cloud drive, person, or location
-                  must be deleted from that destination by you.
-                </li>
+                <li>Local journal data remains until you edit it, delete it, clear app data, or uninstall the app. Files exported elsewhere must be deleted at their destination.</li>
+                <li>An active account retains up to two ready cloud archives, each no larger than 1 GB and together no larger than 2 GB; superseded and failed operation files are cleaned up.</li>
+                <li>After Premium becomes inactive, uploads stop and existing backups remain available for one non-extending 30-day recovery period. They are permanently deleted after that window unless Premium reactivates first.</li>
+                <li>Account deletion removes cloud archives and account records without waiting for the Premium-expiry recovery period. RevenueCat customer deletion is requested and Firebase Authentication is deleted last.</li>
+                <li>Restricted operational logs and support correspondence are retained only for configured diagnostic, security, dispute, or legal periods, then deleted or aggregated. Tax, transaction, fraud, and legal records may be retained where required.</li>
               </ul>
               <p>
-                If you contact support by email, the message is retained by the email providers and
-                mailboxes involved until it is deleted under their retention controls. Do not send
-                journal exports or sensitive health information unless it is necessary for your
-                support request.
+                Delete in <strong>Settings → Account &amp; Premium → Delete account</strong> or use
+                the public <a href="../account-deletion/">account-deletion instructions</a>.
+                Deletion normally completes within 24 hours after an authenticated in-app request;
+                verified support requests begin after ownership checks. Deleting an account does
+                not cancel a Google Play subscription.
               </p>
             </section>
 
-            <section id="security">
-              <h2>8. Data security</h2>
+            <section id="local">
+              <h2>7. Local permissions, media, and device features</h2>
               <p>
-                Liftbook uses Android's application sandbox to isolate its SQLite database,
-                preferences, widget data, cached exports, and private workout-video files from other
-                apps. Android cloud backup is disabled. The app does not maintain a backend that
-                stores or processes your journal, and it attempts to remove temporary CSV and PNG
-                files after the related operation.
+                Liftbook requests access only after you choose a related action. The system photo
+                picker or media permission lets you select bodyweight photos or set videos. The
+                system camera can record a set video. The document picker reads a backup or CSV you
+                select. You can decline or revoke these permissions, although the related feature
+                will not work.
               </p>
               <p>
-                No storage method is completely secure. Protect your device with an up-to-date
-                operating system and a secure screen lock. Files you export are protected according
-                to the storage location or service you choose, not by Liftbook.
-              </p>
-            </section>
-
-            <section id="website">
-              <h2>9. This website, hosting, and external services</h2>
-              <p>
-                The Liftbook landing page and this policy are static pages. They contain no user
-                account, input form, cookie, advertising pixel, analytics code, or third-party
-                client-side script, and they do not send data to the Liftbook developer.
-              </p>
-              <p>
-                The website hosting provider may process standard technical request logs—such as IP
-                address, request time, requested path, and browser user agent—to deliver and protect
-                the site. That processing is controlled by the hosting provider and must be reviewed
-                against the provider's policy when the final public host is selected.
-              </p>
-              <p>
-                The support link opens your chosen email service. If you send a message, your email
-                address, message content, and attachments are processed by the email providers
-                involved and received in the Liftbook support mailbox.
+                Managed media is stored in Liftbook's private app files and referenced by the local
+                database; cloud archives include it only when you request an upload. The Android
+                widget reads a private current-week snapshot. Android system app-data backup is
+                disabled. Temporary PNG and manual export files are removed when possible after the
+                requested action.
               </p>
             </section>
 
             <section id="health">
-              <h2>10. Health and medical disclaimer</h2>
+              <h2>8. Health, fitness, and children</h2>
               <p>
-                Liftbook is a personal fitness journal. It lets you enter and review strength
-                training, cardio, bodyweight, and optional heart-rate information, but it does not
-                connect to medical records or health sensors.
+                Fitness, wellness, Recovery, rating, score, distribution, and progression features
+                are informational journal tools. They are not medical advice, diagnoses,
+                treatment, or physiological-readiness assessments. Consult a qualified healthcare
+                professional when appropriate. Liftbook is not directed to children, and an adult
+                should supervise any use by a minor as required by local law and Google Play rules.
               </p>
-              <p className="policy-notice">
-                Liftbook is not a medical device and does not diagnose, treat, cure, or prevent any
-                medical condition. Trends, goals, records, and estimates are for personal logging
-                only and may be incomplete or inaccurate. Consult a qualified healthcare
-                professional for medical advice and before making health or exercise decisions that
-                may affect you.
+            </section>
+
+            <section id="rights">
+              <h2>9. Your choices and privacy rights</h2>
+              <p>
+                You can use the local core without an account, choose whether to upload a backup,
+                inspect and delete local records, export portable copies, sign out, cancel Premium,
+                and delete your account. Depending on your location, you may also request access,
+                correction, deletion, portability, restriction, objection, or withdrawal of
+                consent by emailing <a href="mailto:liftbook.support@gmail.com">liftbook.support@gmail.com</a>.
+                We may need to verify ownership and may deny or limit a request where law permits.
               </p>
             </section>
 
             <section id="changes">
-              <h2>11. Changes to this policy</h2>
+              <h2>10. Policy changes</h2>
               <p>
-                This policy may be updated when Liftbook's features, permissions, providers, or data
-                practices change, or when applicable requirements change. The effective date at the
-                top identifies the current version. The published policy and the Google Play Data
-                safety and Health apps declarations must remain accurate and consistent with the
-                released app.
-              </p>
-              <p>
-                Questions about this policy can be sent to{" "}
-                <a href="mailto:liftbook.support@gmail.com">liftbook.support@gmail.com</a>.
+                This notice may change when Liftbook, its providers, or legal requirements change.
+                The effective date above will be updated, and material changes will be communicated
+                in the app when required. Questions or complaints can be sent to the privacy contact
+                above; you may also have the right to contact your local data-protection authority.
               </p>
             </section>
           </article>
         </div>
       </main>
-
       <SiteFooter page="privacy" />
     </>
   );

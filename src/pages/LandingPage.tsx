@@ -55,7 +55,7 @@ export function LandingPage() {
 
               <p className="hero-subtitle">
                 Strength training, cardio, and bodyweight tracking in a lightning-fast, offline app.
-                No accounts, no ads, no subscriptions, and zero tracking.
+                The core journal works without an account. No ads or behavioral analytics.
               </p>
 
               <div className="hero-actions">
@@ -90,9 +90,9 @@ export function LandingPage() {
                     <svg className="stat-icon" viewBox="0 0 20 20" fill="currentColor">
                       <path fillRule="evenodd" d="M10 9a3 3 0 100-6 3 3 0 000 6zm-7 9a7 7 0 1114 0H3z" clipRule="evenodd" />
                     </svg>
-                    <span className="stat-val">0</span>
+                    <span className="stat-val">Core</span>
                   </div>
-                  <span className="stat-lbl">No Account Needed</span>
+                  <span className="stat-lbl">Core Needs No Account</span>
                 </div>
 
                 <div className="stat-item">
@@ -162,7 +162,7 @@ export function LandingPage() {
             <span className="pill-tag">Recoverable Cardio Timer</span>
             <span className="pill-tag">Bodyweight Phase Targets</span>
             <span className="pill-tag">100% Offline Functionality</span>
-            <span className="pill-tag">Zero Telemetry or Accounts</span>
+            <span className="pill-tag">No Ads or Behavioral Analytics</span>
             <span className="pill-tag">Independent CSV Exports</span>
             <span className="pill-tag">Android Home Widget</span>
           </div>
@@ -274,15 +274,15 @@ export function LandingPage() {
                     <path d="M7 11V7a5 5 0 0 1 10 0v4" />
                   </svg>
                 </div>
-                <h3>Zero Telemetry & Private by Design</h3>
+                <h3>Local-First & Private by Design</h3>
                 <p>
-                  No accounts, passwords, or emails. No telemetry SDKs, ad trackers, or analytics.
-                  Android cloud backup is disabled by design to ensure data stays yours alone.
+                  Local journaling needs no account. Optional account services clearly disclose
+                  what leaves the device. There are no ads or behavioral analytics.
                 </p>
                 <ul className="bento-checklist">
-                  <li><CheckIcon /> No user account or authentication required</li>
+                  <li><CheckIcon /> No account required for local journaling</li>
                   <li><CheckIcon /> Zero ads, tracking SDKs, or analytics</li>
-                  <li><CheckIcon /> No third-party data transmission</li>
+                  <li><CheckIcon /> User-controlled portable backups</li>
                 </ul>
               </article>
 
@@ -490,29 +490,29 @@ export function LandingPage() {
                 <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
                   <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z" />
                 </svg>
-                <span>Zero-Knowledge Architecture</span>
+                <span>Local-First Architecture</span>
               </div>
 
-              <h2>Your training data never leaves your device.</h2>
+              <h2>Your journal starts and remains usable on your device.</h2>
               
               <p>
-                Unlike mainstream fitness apps that require mandatory accounts, sync your private health logs
-                to remote cloud servers, and monetize your behavior with telemetry, Liftbook operates 
-                <strong> 100% locally on your phone</strong>.
+                Liftbook keeps its core journal in local SQLite and works offline. Data leaves the device
+                only when you choose a sharing, transfer, or optional account-based cloud action described
+                in the privacy policy. Liftbook does not sell journal data or use behavioral analytics.
               </p>
 
               <div className="privacy-points-grid">
                 <div className="privacy-point">
-                  <strong>No Account</strong>
-                  <span>Open the app and log immediately. Zero registration.</span>
+                  <strong>Optional Account</strong>
+                  <span>Open and log locally without registering.</span>
                 </div>
                 <div className="privacy-point">
                   <strong>No Ads or Trackers</strong>
                   <span>No Facebook SDK, Google Analytics, or third-party ads.</span>
                 </div>
                 <div className="privacy-point">
-                  <strong>No Cloud Backup</strong>
-                  <span>Android cloud backup is disabled to prevent accidental leaks.</span>
+                  <strong>User-Controlled Transfer</strong>
+                  <span>Manual local transfer stays available without Premium.</span>
                 </div>
                 <div className="privacy-point">
                   <strong>Full CSV Ownership</strong>

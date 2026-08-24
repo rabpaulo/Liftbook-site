@@ -2,7 +2,7 @@ import { useState } from "react";
 import storeIcon from "../../store-icon.png";
 
 type HeaderProps = {
-  page: "home" | "privacy";
+  page: "home" | "privacy" | "terms" | "deletion";
 };
 
 export function SiteHeader({ page }: HeaderProps) {
@@ -30,10 +30,7 @@ export function SiteHeader({ page }: HeaderProps) {
           <a href={`${prefix}#showcase`}>App Tour</a>
           <a href={`${prefix}#gallery`}>Gallery</a>
           <a href={`${prefix}#faq`}>FAQ</a>
-          <a
-            href={isHome ? "#privacy" : "#privacy-policy"}
-            aria-current={isHome ? undefined : "page"}
-          >
+          <a href={isHome ? "#privacy" : "../privacy-policy/"} aria-current={page === "privacy" ? "page" : undefined}>
             Privacy
           </a>
         </nav>
@@ -73,7 +70,7 @@ export function SiteHeader({ page }: HeaderProps) {
             <a href={`${prefix}#showcase`}>App Tour</a>
             <a href={`${prefix}#gallery`}>Gallery</a>
             <a href={`${prefix}#faq`}>FAQ</a>
-            <a href={isHome ? "#privacy" : "#privacy-policy"}>Privacy</a>
+            <a href={isHome ? "#privacy" : "../privacy-policy/"}>Privacy</a>
             <div className="mobile-nav-actions">
               <a
                 className="nav-btn-primary full-width"
@@ -96,7 +93,7 @@ export function SiteHeader({ page }: HeaderProps) {
 }
 
 type FooterProps = {
-  page: "home" | "privacy";
+  page: "home" | "privacy" | "terms" | "deletion";
 };
 
 export function SiteFooter({ page }: FooterProps) {
@@ -113,8 +110,8 @@ export function SiteFooter({ page }: FooterProps) {
             <span className="brand-name">Liftbook</span>
           </a>
           <p className="footer-tagline">
-            Focused offline journal for strength training, cardio, and bodyweight.
-            No account, no ads, no analytics.
+            Local-first journal for strength training, cardio, and bodyweight.
+            No ads or behavioral analytics; an account is optional.
           </p>
         </div>
 
@@ -132,12 +129,10 @@ export function SiteFooter({ page }: FooterProps) {
           <h4>Legal & Support</h4>
           <ul>
             <li>
-              {isHome ? (
-                <a href="./privacy-policy/">Privacy Policy</a>
-              ) : (
-                <a href="../">Home</a>
-              )}
+              <a href={isHome ? "./privacy-policy/" : "../privacy-policy/"}>Privacy Policy</a>
             </li>
+            <li><a href={isHome ? "./terms/" : "../terms/"}>Terms & Subscriptions</a></li>
+            <li><a href={isHome ? "./account-deletion/" : "../account-deletion/"}>Delete an account</a></li>
             <li>
               <a href="mailto:liftbook.support@gmail.com">liftbook.support@gmail.com</a>
             </li>
@@ -150,7 +145,7 @@ export function SiteFooter({ page }: FooterProps) {
 
       <div className="shell footer-bottom">
         <p>© 2026 Liftbook · Made for logging, not tracking.</p>
-        <a className="back-to-top" href={isHome ? "#home" : "#privacy-policy"}>
+        <a className="back-to-top" href={isHome ? "#home" : "#legal-content"}>
           Back to top ↑
         </a>
       </div>
